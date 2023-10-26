@@ -63,7 +63,7 @@ spec:
           imagePullPolicy: {{ .Values.front.image.pullPolicy | default .Values.image.pullPolicy }}
           env:
             - name: FUNKWHALE_API_HOST
-              value: localhost
+              value: 127.0.0.1
             - name: FUNKWHALE_API_PORT
               value: '5000'
           envFrom:
